@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="flip_card">
+        <section class="flip_card__front">
+            <img src="./assets/TestWorks_logo_and_strapline.svg" alt="">
+            <p>Please Sign in </p>
+            <form action="submit">
+                <input type="text" name ="name" id = "name"placeholder="name" required>
+                <input type="text" name="company" id="company" placeholder="company" required>
+                <input type="email" name="email" id="email" placeholder="email" required>
+
+            </form>
+            <button id="btn-signIn">Sign In</button>
+        </section>
+        <section class="flip_card__back">
+            <ul role="list" id="visitors-list">
+
+            </ul>
+            <button id="btn-signOut">Log Out</button>
+        </section>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
+

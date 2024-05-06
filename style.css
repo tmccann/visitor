@@ -1,0 +1,117 @@
+/* style.css */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin, padding, and font */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root and body defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #dceaf0;
+  display: flex;
+  justify-content: center;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Set flip card styles */
+.flip_card {
+  position: relative;
+  max-height: 80%;
+  min-width: 500px;
+  perspective: 3200px;
+  padding: 3rem;
+}
+
+.flip_card__front,
+.flip_card__back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 1s ease-in;
+  backface-visibility: hidden;
+}
+
+.flip_card__front {
+  transform: rotateY(0deg);
+  background-color: whitesmoke;
+  color: #3385c6;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+form input{
+    margin: 1rem;
+}
+button{
+    margin: 2rem;
+}
+
+.flip_card__back {
+  transform: rotateY(-180deg);
+  background-color: #3385c6;
+  color: whitesmoke;
+}
+
+.flip-card-out {
+  transform: rotateY(180deg);
+}
+
+.flip-card-in {
+  transform: rotateY(0deg);
+}
+ #visitors-list{
+width: 100%;
+}
+
+#visitors-list li{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+    font-size: 1.5rem ;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
